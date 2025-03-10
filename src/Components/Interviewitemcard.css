@@ -1,0 +1,74 @@
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    margin: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 290px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ddd;
+}
+
+.card-content {
+    padding-bottom: 6px;
+}
+
+.con-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    color: #4a3aff;
+    font-weight: bold;
+    /* color: #1a1a1a; */
+}
+
+.experience {
+    font-size: 1rem;
+    color: #555;
+}
+
+.created-at {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-btn {
+    background: #fff;
+    border: 1px solid #444;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.start-bt {
+    background: #4a3aff;
+    color: #fff;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 2px;
+    font-weight: bold; 
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background: #3a2aff;
+}
+
+.feedback-btn:hover {
+    background: #f1f1f1;
+}

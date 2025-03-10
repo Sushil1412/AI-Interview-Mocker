@@ -1,0 +1,19 @@
+.btp {
+    margin-left: 67%;
+    display: flex;
+    gap: 1rem;
+    /* // border-radius: 8px */
+}
+
+.btp button {
+    padding: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #534bd8;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}

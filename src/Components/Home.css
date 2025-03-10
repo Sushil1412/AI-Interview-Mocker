@@ -1,0 +1,40 @@
+.desc {
+    color: gray;
+    opacity: 500;
+}
+
+.homContainer {
+    margin-left: 13%;
+}
+
+.addContainer {
+    width: 12rem;
+    border-radius: 8px;
+    /* You can adjust this value for a more or less rounded effect */
+    border: 0.5px solid gray;
+    /* Example border color */
+    padding: 10px;
+    background-color: var(--secondary);
+    justify-items: center;
+
+}
+
+.add {
+    font-weight: bold;
+    /* Make the text bold */
+    font-size: 19px;
+
+}
+
+.addContainer:hover {
+    transition: all 0.3s ease;
+    /* Smooth transition for all properties */
+    cursor: pointer;
+    transform: scale(1.05);
+    /* Scale the element to 105% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-weight: bold;
+}

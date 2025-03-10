@@ -1,0 +1,136 @@
+/* ===== Container Styling ===== */
+.interview-container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== Heading Styling ===== */
+.interview-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== Grid Layout (Row & Column) ===== */
+.interview-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Creates dynamic columns */
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+    justify-content: center;
+}
+
+/* ===== Card Styling ===== */
+.interview-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effect */
+.interview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Job Position Title ===== */
+.interview-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* ===== Experience Text ===== */
+.interview-card .exp {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* ===== Created At Date ===== */
+.interview-card .cr {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===== Buttons Container ===== */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* ===== Feedback Button ===== */
+.feedback-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.feedback-btn:hover {
+    background-color: #ddd;
+}
+
+/* ===== Start Button ===== */
+.start-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.start-btn:hover {
+    background-color: #2563eb;
+}
+
+/* ===== No Interviews Found Message ===== */
+.no-interviews {
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .interview-con {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .interview-card {
+        padding: 15px;
+    }
+
+    .interview-card h3 {
+        font-size: 18px;
+    }
+
+    .feedback-btn,
+    .start-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}

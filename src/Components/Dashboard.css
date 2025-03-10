@@ -1,0 +1,16 @@
+.login-image {
+    display: flex;
+    gap: 9rem;
+    margin-top: 5rem;
+}
+
+.login-pic {
+    width: 45rem;
+}
+
+
+#Dashboard {
+    display: flex;
+    gap: 66rem;
+
+}

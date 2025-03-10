@@ -1,0 +1,69 @@
+/* Container */
+.question-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 580px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    height: 350px;
+    margin-left: 8%;
+    background: white;
+    margin-top: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Question Buttons */
+.question-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.question-btn {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #f5f5f5;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.question-btn.active {
+    background: #534bd8;
+    color: white;
+    font-weight: bold;
+}
+
+/* Question Display */
+.question-display {
+    font-size: 18px;
+    line-height: 1.4;
+    min-height: 80px;
+    font-family: Arial, sans-serif;
+    /* margin-bottom: 20px; */
+}
+
+.volumebtn {
+    margin-left: -33.5rem;
+}
+
+.volumebtn :hover {
+    cursor: pointer;
+}
+
+/* Note Section */
+.notee {
+    background: #e0e7ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 3rem;
+    height: 7rem;
+    font-size: 17px;
+    text-align: left;
+    color: #4338ca;
+
+}

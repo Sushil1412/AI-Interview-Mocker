@@ -1,0 +1,52 @@
+.menu {
+    margin-left: 20%;
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    align-items: center;
+    font-weight: bold;
+}
+
+.menu li a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent element */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.menu li:hover a {
+    color: blue;
+    font-weight: bold;
+}
+
+.hcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f0ed;
+    padding: 0.2rem 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.proIcon {
+    margin-left: 33%;
+    margin-top: 0.6rem;
+    align-items: center;
+}
+
+.menu li.active a {
+    color: blue; /* Ensure the active link changes color */
+    font-weight: bold; /* Highlight the active item */
+    padding-bottom: 2px; /* Adds balance */
+}
+
+
+
+/* media query */
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide the list */
+    }
+}
