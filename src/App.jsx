@@ -1,5 +1,5 @@
 import React from 'react';
-import Dashboard from './Components/DashBoard';
+import DashBoard from './Components/DashBoard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import InterviewPage from './Components/InterviewPage';
 import Feedback from './Components/Feedback';
@@ -15,8 +15,8 @@ const App = () => {
       <Toaster position="top-center" reverseOrder={false} />
 
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/" element={<DashBoard />} />
+        <Route path="/Dashboard" element={<DashBoard />} />
         <Route path="/How-it-works" element={<HowItWorks />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Dashboard/Interview/:id" element={<InterviewPage />} />
