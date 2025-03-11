@@ -9,7 +9,7 @@ import QuestionSection from "./QuestionSection";
 import RecordAnswerSection from "./RecordAnswerSection";
 import { sendPrompt } from "../Utils/GeminiAiModel";
 import { useUser } from "@clerk/clerk-react";
-import './Startinterview.css'
+import './StartInterview.css'
 
 const StartInterview = () => {
     const { id: interviewId } = useParams();
@@ -78,7 +78,7 @@ const StartInterview = () => {
                 userEmail: user?.primaryEmailAddress?.emailAddress || "No email found",
                 createdAt: new Date().toISOString(),
             };
-            
+
             console.log(userAnswerData);
 
             const response = await axios.post("http://localhost:5000/api/user-answers", userAnswerData);
