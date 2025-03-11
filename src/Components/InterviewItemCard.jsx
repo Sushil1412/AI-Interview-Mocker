@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './InterviewItemCard.css';
+import './Interviewitemcard.css';
 
 const InterviewItemCard = ({ interview }) => {
     const navigate = useNavigate();
