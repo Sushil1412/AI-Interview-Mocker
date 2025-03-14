@@ -9,7 +9,7 @@ import QuestionSection from "./QuestionSection";
 import RecordAnswerSection from "./RecordAnswerSection";
 import { sendPrompt } from "../Utils/GeminiAiModel";
 import { useUser } from "@clerk/clerk-react";
-import './Startinterview.css'
+import './StartInterview.css'
 
 const StartInterview = () => {
     const { id: interviewId } = useParams();
