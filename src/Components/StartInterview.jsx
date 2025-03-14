@@ -23,7 +23,7 @@ const StartInterview = () => {
     useEffect(() => {
         const fetchInterviewDetails = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/mock-interview/${interviewId}`);
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/mock-interview/${interviewId}`);
 
                 if (response.data && Array.isArray(response.data.MockJsonResp)) {
                     setInterviewData(response.data);
@@ -78,10 +78,10 @@ const StartInterview = () => {
                 userEmail: user?.primaryEmailAddress?.emailAddress || "No email found",
                 createdAt: new Date().toISOString(),
             };
-            
+
             console.log(userAnswerData);
 
-            const response = await axios.post("http://localhost:5000/api/user-answers", userAnswerData);
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/user-answers`, userAnswerData);
             if (response.status === 201) {
                 alert("Answer and feedback saved successfully!");
             } else {

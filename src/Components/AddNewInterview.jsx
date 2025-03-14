@@ -102,7 +102,7 @@ const AddNewInterview = () => {
 
       // ✅ Send Data to Backend
       const dbResponse = await axios.post(
-        "http://localhost:5000/api/mock-interview",
+        `${import.meta.env.VITE_BACKEND_URL}/api/mock-interview`,
         postData,
         {
           headers: { "Content-Type": "application/json" },

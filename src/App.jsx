@@ -1,5 +1,6 @@
 import React from 'react';
-import Dashboard from './Components/Dashboard';
+import Dashboard from "./Components/DashBoard"; // Correct the case
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import InterviewPage from './Components/InterviewPage';
 import Feedback from './Components/Feedback';

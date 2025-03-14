@@ -20,7 +20,7 @@ const Feedback = () => {
   // Function to fetch user answers
   const getFeedback = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/useranswer/${interviewId}`);
+      const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/useranswer/${interviewId}`);
       setUserAnswers(response.data);
     } catch (err) {
       console.error("Error fetching user answers:", err);
@@ -84,7 +84,7 @@ const Feedback = () => {
         </div>
 
         <Button
-          style={{ background: "#4338ca", color: "white", marginTop: "-1.5rem",padding:'.6rem' }}
+          style={{ background: "#4338ca", color: "white", marginTop: "-1.5rem", padding: '.6rem' }}
           onClick={() => navigate("/dashboard")} // ✅ Now navigate should work
         >
           Go to Home

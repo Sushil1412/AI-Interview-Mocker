@@ -20,7 +20,7 @@ const InterviewList = () => {
                 return;
             }
 
-            const response = await axios.get(`http://localhost:5000/api/mock-preinterview/${email}`);
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/mock-preinterview/${email}`);
 
             console.log("API Response:", response.status, response.data);
 

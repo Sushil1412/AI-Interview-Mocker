@@ -22,7 +22,7 @@ const InterviewPage = () => {
 
     const fetchInterviewDetails = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/mock-interview/${interviewId}`);
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/mock-interview/${interviewId}`);
             setInterview(response.data);
         } catch (err) {
             console.error("Error fetching interview:", err);
